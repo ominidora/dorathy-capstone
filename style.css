@@ -344,6 +344,11 @@ font-family: "Bebas Neue", sans-serif;
 color: white;
     
 }
+.burger {
+  display: none;
+}
+
+
 
 .g {
     width: 40px;
@@ -462,6 +467,18 @@ color: white;
   nav {
     display: none;
   }
+  header {
+    justify-content: center;
+    gap: 120px;
+    padding: 30px;
+  }
+
+  .burger {
+    display: block;
+    
+  }
+
+  
 
   /* General Section Fix */
   section {
