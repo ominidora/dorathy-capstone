@@ -15,6 +15,12 @@ header {
     padding: 40px;
 }
 
+header h2 {
+    color: white;
+    font-size: 18px;
+    font-family: "Manrope", sans-serif;
+}
+
 nav {
     display: flex;
     gap: 20px;
@@ -485,24 +491,26 @@ color: white;
     flex-direction: column;
     padding: 20px;
     gap: 30px;
-    text-align: center;
+    text-align: start;
   }
 
   /* Intro Section */
   .intro {
-    align-items: center;
+    align-items: flex-start;
     gap: 25px;
   }
 
   .intro h1 {
     font-size: 36px;
     line-height: 38px;
-    width: 100%;
+    width: 280px;
+    text-align: start;
   }
 
   .intro p {
-    width: 100%;
+    width: 280px;
     font-size: 14px;
+    text-align: start;
   }
 
   .heroimg {
@@ -514,18 +522,23 @@ color: white;
   /* Work Section */
   .work {
     flex-direction: column;
-    padding: 0 60px;
+    justify-content: start;
+   padding: 40px;
     gap: 40px;
+  }
+
+  .feat {
+    padding-left: 20px;
   }
 
   .card {
     width: 100%;
     height: auto;
-    padding: 20px;
+    padding: 30px;
   }
   .card button {
-    margin-top: -230px;
-    margin-left: 80px;
+    margin-top: -258px;
+    margin-left: 40px;
     font-size: 10px;
     height: 20px;
     width: 100px;
@@ -538,22 +551,29 @@ color: white;
 
   .prop {
     width: 100%;
-    padding: 0;
+    
     text-align: center;
+    gap: 20px;
   }
 
   .prop h3 {
-    font-size: 28px;
+    font-size: 25px;
     width: 100%;
+    text-align: start;
   }
 
   .prop p {
     width: 100%;
     font-size: 14px;
+    text-align: start;
+    margin-top: 20px;
+  }
+  .exper {
+    padding-top: 30px;
   }
 
   ul {
-    flex-direction: column;
+    padding-top: 40px;
     gap: 10px;
     align-items: center;
   }
@@ -563,33 +583,37 @@ color: white;
     flex-direction: column;
     gap: 30px;
     padding: 20px;
-    text-align: center;
+    text-align: start;
+    align-items: start;
   }
 
   .about h1 {
     font-size: 36px;
+    text-align: start;
   }
 
   .about h2 {
     width: 100%;
     font-size: 20px;
+    text-align: start;
   }
 
   .about p {
     width: 100%;
     font-size: 14px;
+    text-align: start;
   }
 
   /* Contact Section */
   .contact-container {
     flex-direction: column;
-    padding: 40px 20px;
+    /* padding: 40px 20px; */
     min-height: auto;
   }
 
   .left {
     margin-bottom: 40px;
-    text-align: center;
+    text-align: start;
   }
 
   .left h1 {
@@ -601,11 +625,14 @@ color: white;
   }
 
   .socials {
-    justify-content: center;
+    justify-content: start;
+    align-items: start;
   }
 
   .right {
     width: 100%;
+      justify-content: start;
+      align-items: start;
   }
 
   form {
@@ -616,15 +643,18 @@ color: white;
   textarea {
     font-size: 14px;
     padding: 12px;
+    width: 100%;
+    max-width: 350px;
   }
 
   .contact-container button {
     width: 100%;
     padding: 14px;
+    max-width: 200px;
   }
 
   footer {
-    text-align: center;
+    text-align: start;
     margin-top: 30px;
   }
 
