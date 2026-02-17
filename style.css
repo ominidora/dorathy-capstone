@@ -354,6 +354,10 @@ color: white;
   display: none;
 }
 
+.socials a {
+  text-decoration: none;
+}
+
 
 
 .g {
@@ -537,7 +541,7 @@ color: white;
     padding: 30px;
   }
   .card button {
-    margin-top: -258px;
+    margin-top: -268px;
     margin-left: 40px;
     font-size: 10px;
     height: 20px;
@@ -657,5 +661,72 @@ color: white;
     text-align: start;
     margin-top: 30px;
   }
+  /* Hamburger Button */
+  .menu-btn {
+    font-size: 28px;
+    cursor: pointer;
+    padding: 15px;
+    background: #111;
+    color: white;
+    border: none;
+  }
+
+  /* Overlay */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+  }
+
+  .overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* Side Menu */
+  .side-menu {
+    position: fixed;
+    top: 0;
+    left: 150px;
+    width: 250px;
+    height: 100%;
+    background: #222;
+    color: white;
+    padding-top: 60px;
+    transition: 0.3s ease;
+    
+  }
+
+  .active {
+    left: 0;
+  }
+
+  .side-menu a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    transition: 0.2s;
+  }
+
+  .side-menu a:hover {
+    background: #444;
+  }
+
+  /* Close button */
+  .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    cursor: pointer;
+  }
+
 
 }

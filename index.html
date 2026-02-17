@@ -15,7 +15,21 @@
             <a href="#contact">Contact</a>
         </nav>
         <div class="burger">
-            <img src="/images/Frame 35.png" alt="">
+            
+                        
+           
+                <img class="menu-btn" onclick="openMenu()" src="/images/Frame 35.png" alt="">
+
+            <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+            <nav class="side-menu" id="sideMenu">
+            <span class="close-btn" onclick="closeMenu()">&times;</span>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            </nav>
+
            
 
         </div>
@@ -212,6 +226,26 @@
       <footer>
         © 2026 Olalani Dorathy
       </footer>
+
+
+
+
+
+      <script>
+  const menu = document.getElementById("sideMenu");
+  const overlay = document.getElementById("overlay");
+
+  function openMenu() {
+    menu.style.display = "block";
+    overlay.classList.add("active");
+  }
+
+  function closeMenu() {
+    menu.style.display = "none";
+    overlay.classList.remove("active");
+  }
+</script>
+
 
     
 </body>
